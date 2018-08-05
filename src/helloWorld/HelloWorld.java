@@ -18,18 +18,22 @@ public class HelloWorld {
 	public HelloWorld(String name)
 	{
 		super();
-		if(name == "") 
-		{
-			throw new NullPointerException("Name must not be null");
-		}
-		else if(namePattern.matcher(name).find())
-		{
-			
-			throw new IllegalArgumentException("Name cannot contain numbers or special characters");
-		}
-		else
-		{
+		if(isRightName(name)){
 			this.name = name;
+		}
+		
+	
+	}
+	
+	public Boolean isRightName(String name) {
+		if(name == "") {
+			throw new IllegalArgumentException("Name must not be empty");
+		} else if(namePattern.matcher(name).find()) {		
+			throw new IllegalArgumentException("Name cannot contain numbers or special characters");
+		} else if(name == null) {
+			throw new NullPointerException("Name must not be null");
+		} else {
+			return true;
 		}
 	}
 	
@@ -41,7 +45,7 @@ public class HelloWorld {
 	
 	public static void main(String[] args)
 	{
-		HelloWorld obj1 = new HelloWorld("Harry Tennent ");
+		HelloWorld obj1 = new HelloWorld("Harry");
 		obj1.sayName();
 		
 		
