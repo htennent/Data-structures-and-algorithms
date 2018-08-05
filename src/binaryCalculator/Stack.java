@@ -27,7 +27,6 @@ public class Stack<T> {
 	 */
 	public void pop() {
 		if(!this.isEmpty()) {
-			this.stack.remove(head);
 			this.head--;
 		}else {
 		}
