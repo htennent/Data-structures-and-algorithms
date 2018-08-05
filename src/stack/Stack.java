@@ -1,4 +1,4 @@
-package binaryCalculator;
+package stack;
 import java.util.ArrayList;
 
 public class Stack<T> {
@@ -25,10 +25,12 @@ public class Stack<T> {
 	/**
 	 * Take the top element off of the stack without returning it
 	 */
-	public void pop() {
+	public boolean pop() {
 		if(!this.isEmpty()) {
 			this.head--;
+			return true;
 		}else {
+			return false;
 		}
 	}
 	

@@ -1,6 +1,8 @@
 package binaryCalculator;
 import java.util.ArrayList;
 
+import stack.Stack;
+
 public class BinaryCalculator {
 	
 	Stack<Integer> stack = new Stack<Integer>();
