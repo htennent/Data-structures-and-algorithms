@@ -4,10 +4,11 @@ import java.util.ArrayList;
 public class Stack<T> {
 	
 	private int head = -1;
-	private ArrayList<T> stack = new ArrayList<T>();
+	private ArrayList<T> stack;
 	
 	public Stack(){
 		super();
+		this.stack = new ArrayList<T>();
 	}
 	
 	/**
@@ -17,9 +18,9 @@ public class Stack<T> {
 	public void push(T data) {
 		if(data == null) {
 			throw new IllegalArgumentException("Cannot push null values");
-		}
-		this.stack.add(data);
+		}		
 		this.head++;
+		this.stack.add(this.head,data);
 	}
 	
 	/**
