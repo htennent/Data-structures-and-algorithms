@@ -1,4 +1,4 @@
-package queue;
+package com.htennent.datastructures;
 import java.util.ArrayList;
 
 public class Queue<T> {

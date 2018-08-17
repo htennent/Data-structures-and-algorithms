@@ -1,7 +1,7 @@
 /**
  * 
  */
-package helloWorld;
+package com.htennent.helloworld;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

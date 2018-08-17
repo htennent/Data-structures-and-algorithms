@@ -1,4 +1,4 @@
-package maximalSumSubsequence;
+package com.htennent.maximalsumsubsequence;
 
 public class MSS {
 	

@@ -1,4 +1,4 @@
-package stack;
+package com.htennent.datastructures;
 import java.util.ArrayList;
 
 public class Stack<T> {

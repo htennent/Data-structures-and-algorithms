@@ -1,5 +1,5 @@
-package syntaxChecker;
-import stack.Stack;
+package com.htennent.syntaxchecker;
+import com.htennent.datastructures.Stack;
 
 public class Checker {
 	

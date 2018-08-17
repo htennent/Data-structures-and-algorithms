@@ -1,4 +1,4 @@
-package linkedList;
+package com.htennent.datastructures;
 
 public class Node<T> {
 	

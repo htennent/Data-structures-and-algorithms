@@ -1,7 +1,7 @@
-package binaryCalculator;
+package com.htennent.binarycalculator;
 import java.util.ArrayList;
 
-import stack.Stack;
+import com.htennent.datastructures.Stack;
 
 public class BinaryCalculator {
 	
